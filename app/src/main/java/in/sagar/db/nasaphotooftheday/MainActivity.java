@@ -177,6 +177,7 @@ public class MainActivity extends AppCompatActivity {
                     if (!explanation.isEmpty()) {
                         String upToNCharacters = explanation.substring(0, Math.min(explanation.length(), 300));
                         mDescriptionTV.setText(upToNCharacters+".....");
+                        isClicked = true;
                     } else {
                         mDescriptionTV.setText("");
                     }
